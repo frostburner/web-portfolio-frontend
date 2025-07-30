@@ -1,16 +1,14 @@
-import React from "react";
+import React from 'react';
 
 const Homepage = () => {
     return (
-        <div className="homepage">
-        <header className="homepage-header">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my projects and skills</p>
-        </header>
-        <section className="homepage-content">
-            <p>This is the homepage of my portfolio website.</p>
-            {/* Add more content or components as needed */}
-        </section>
+        <div className="homepage"> 
+        <div className="profile-img"> {/* img class dapat */} </div> 
+        <div className="inter-h1"> {/*name chuchu */} Test Name</div>
+            <p className="inter-desc">Developer/Designer/</p>
+            <div className="inter-p">Lorem Ipsum description</div>
+            <button className="contact"> Contact Me </button>
+      
         </div>
     );
     }
