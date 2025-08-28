@@ -1,8 +1,10 @@
 import React from "react";
+import Logo from "../assets/img/logo-portfolio.png";
 
 const Navbar = () => {
     return (
         <nav className="flex item-center justify-around w-96 test-nav inter-regular">
+            <img src={Logo} alt="" className="logo" />
             <ul className="flex list-none">
                 <li><a href="#home" className="hover:text-cyan-400 transition-colors">Home</a></li>
                 <li><a href="#about" className="hover:text-cyan-400 transition-colors">About</a></li>
