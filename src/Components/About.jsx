@@ -13,7 +13,7 @@ const About = () => {
     return (
         <>
         <section className="about">
-        <h2 >About Me</h2>
+        <h2 className="title">About Me</h2>
         <div className="inter-desc">Get to know me</div>
         <p>Detail-oriented and tech-savvy professional with a strong foundation in computer systems, technical support,
 and troubleshooting. Skilled in diagnosing hardware and software issues, providing effective solutions, and

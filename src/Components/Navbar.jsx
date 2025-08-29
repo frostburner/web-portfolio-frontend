@@ -8,8 +8,8 @@ const Navbar = () => {
             <ul className="flex list-none">
                 <li><a href="#home" className="hover:text-cyan-400 transition-colors">Home</a></li>
                 <li><a href="#about" className="hover:text-cyan-400 transition-colors">About</a></li>
-                <li><a href="#projects" className="hover:text-cyan-400 transition-colors">Projects</a></li>
-                <li><a href="#skills" className="hover:text-cyan-400 transition-colors">Skills</a></li>
+                <li><a href="#projects" className="hover:text-cyan-400 transition-colors">Skills</a></li>
+                <li><a href="#skills" className="hover:text-cyan-400 transition-colors">Projects</a></li>
             </ul>
             <button
                 className="bg-cyan-400 text-white font-semibold px-5 py-2 rounded hover:bg-cyan-700 transition-colors inter-regular"
