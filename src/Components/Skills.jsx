@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { RiCodeSSlashLine } from "react-icons/ri";
-import { FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaTools, FaLock, FaLaptopCode, FaUsers, FaJava, FaPython, FaJs } from "react-icons/fa";
+import { FaDesktop, FaWindows, FaGitAlt, FaCrosshairs, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaTools, FaLock, FaLaptopCode, FaUsers, FaJava, FaPython, FaJs, FaGit } from "react-icons/fa";
 import { BsFiletypeSql } from "react-icons/bs";
 import { SiExpress, SiPostgresql, SiNodedotjs } from "react-icons/si";
+import { BiShieldQuarter } from "react-icons/bi";
+import { GiMagnifyingGlass } from "react-icons/gi";
+import { FcLinux } from "react-icons/fc";
+
+
 
 const Skills = () => {
   const [expandedSkill, setExpandedSkill] = useState(null);
@@ -37,24 +42,34 @@ const Skills = () => {
       title: "Languages",
       description: "Java, Python, JavaScript, SQL.",
       items: [
-       { text: "Java", icon: <FaJava color="#f89820" size={20} /> },       // Java orange
-{ text: "Python", icon: <FaPython color="#3776AB" size={20} /> },  // Python blue
-{ text: "JavaScript", icon: <FaJs color="#F7DF1E" size={20} /> },  // JS yellow
-{ text: "SQL", icon: <BsFiletypeSql color="#4479A1" size={20} /> }, // SQL blue (MySQL)
-
+       { text: "Java", icon: <FaJava color="#f89820" size={20} /> },      
+{ text: "Python", icon: <FaPython color="#3776AB" size={20} /> },  
+{ text: "JavaScript", icon: <FaJs color="#F7DF1E" size={20} /> },  
+{ text: "SQL", icon: <BsFiletypeSql color="#4479A1" size={20} /> }, 
       ],
       icon: <RiCodeSSlashLine size={30} color="#1a1a1a" />,
     },
     {
       id: 4,
       title: "Cybersecurity",
-      description: "Network security, threat analysis.",
+      description: "Network Security, Threat Analysis, Threat Hunting.",
+       items: [
+       { text: "Network Security", icon: <BiShieldQuarter color="#2ECC71" size={20} /> },
+{ text: "Threat Analysis", icon: <GiMagnifyingGlass color="#E67E22" size={20} /> },
+{ text: "Threat Hunting", icon: <FaCrosshairs color="#E74C3C" size={20} /> },
+],
       icon: <FaLock size={30} color="#1a1a1a" />,
     },
     {
       id: 5,
       title: "Tools",
-      description: "Git, Docker, Kubernetes, Linux.",
+      description: "Git, Windows, Linux, Virtual Machines",
+      items: [
+       { text: "Git", icon: <FaGitAlt color="#F05032" size={20} /> },        
+{ text: "Windows", icon: <FaWindows color="#0078D6" size={20} /> },  
+{ text: "Linux", icon: <FcLinux size={20} /> },                      
+{ text: "Virtual Machines", icon: <FaDesktop color="#6C63FF" size={20} /> }, 
+],
       icon: <FaTools size={30} color="#1a1a1a" />,
     },
     {
