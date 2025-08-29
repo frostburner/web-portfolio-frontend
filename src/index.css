@@ -306,11 +306,17 @@ h1 {
 .popup-card {
   max-width: 520px;
   width: 90%;
-  background: #95feff;
+  background: #95feff; /* keep original solid color */
   border-radius: 12px;
   padding: 2rem;
   animation: scaleIn 0.25s ease;
+
+  /* Subtle outer glow */
+  box-shadow: 0 0 20px rgba(149, 254, 255, 0.6);
 }
+
+
+
 
 @keyframes scaleIn {
   from { transform: scale(0.9); opacity: 0; }
@@ -325,4 +331,9 @@ h1 {
   background: #1a1a1a;
   color: white;
   cursor: pointer;
+}
+
+.skill-text {
+  color: #1a1a1a; /* blue */
+  font-weight: 500; /* optional */
 }
