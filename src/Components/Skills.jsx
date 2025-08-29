@@ -1,18 +1,6 @@
 import React, { useState } from "react";
 import { RiCodeSSlashLine } from "react-icons/ri";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaDatabase,
-  FaTools,
-  FaLock,
-  FaLaptopCode,
-  FaUsers,
-  FaJava,
-  FaPython,
-  FaJs,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaTools, FaLock, FaLaptopCode, FaUsers, FaJava, FaPython, FaJs } from "react-icons/fa";
 import { BsFiletypeSql } from "react-icons/bs";
 import { SiExpress, SiPostgresql, SiNodedotjs } from "react-icons/si";
 
