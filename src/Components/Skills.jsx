@@ -6,7 +6,7 @@ import { SiExpress, SiPostgresql, SiNodedotjs } from "react-icons/si";
 import { BiShieldQuarter } from "react-icons/bi";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { FcLinux } from "react-icons/fc";
-
+import { MdDownload } from "react-icons/md";
 
 
 const Skills = () => {
@@ -147,7 +147,7 @@ const Skills = () => {
       </div>
 
       {/* Resume button */}
-      <button className="resume-btn">Resume</button>
+      <button className="resume-btn"><MdDownload /> Resume</button>
     </section>
   );
 };

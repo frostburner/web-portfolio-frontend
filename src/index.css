@@ -304,6 +304,11 @@ h1 {
   width: 150px;
   align-items: center;
   margin: 20px auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .resume-btn:hover {
