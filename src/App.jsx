@@ -7,6 +7,7 @@ import About from './Components/About.jsx'
 import './index.css'
 import Navbar from './Components/Navbar.jsx'
 import Skills from './Components/Skills.jsx'
+import Projects from './Components/Projects.jsx'
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <section id="home"><Homepage /></section>
         <section id='about'><About /></section>
         <section id='skills'><Skills /> </section>
-        <section id='projects'></section>
+        <section id='projects'><Projects/></section>
         <section id='contact'></section>
         </>
       }
