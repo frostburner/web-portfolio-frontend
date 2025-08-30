@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiCodeSSlashLine } from "react-icons/ri";
-import { FaDesktop, FaWindows, FaGitAlt, FaCrosshairs, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaTools, FaLock, FaLaptopCode, FaUsers, FaJava, FaPython, FaJs, FaGit } from "react-icons/fa";
+import { FaLightbulb, FaUsersCog, FaComments, FaSyncAlt, FaDesktop, FaWindows, FaGitAlt, FaCrosshairs, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaTools, FaLock, FaLaptopCode, FaUsers, FaJava, FaPython, FaJs, FaGit } from "react-icons/fa";
 import { BsFiletypeSql } from "react-icons/bs";
 import { SiExpress, SiPostgresql, SiNodedotjs } from "react-icons/si";
 import { BiShieldQuarter } from "react-icons/bi";
@@ -42,10 +42,10 @@ const Skills = () => {
       title: "Languages",
       description: "Java, Python, JavaScript, SQL.",
       items: [
-       { text: "Java", icon: <FaJava color="#f89820" size={20} /> },      
-{ text: "Python", icon: <FaPython color="#3776AB" size={20} /> },  
-{ text: "JavaScript", icon: <FaJs color="#F7DF1E" size={20} /> },  
-{ text: "SQL", icon: <BsFiletypeSql color="#4479A1" size={20} /> }, 
+        { text: "Java", icon: <FaJava color="#f89820" size={20} /> },
+        { text: "Python", icon: <FaPython color="#3776AB" size={20} /> },
+        { text: "JavaScript", icon: <FaJs color="#F7DF1E" size={20} /> },
+        { text: "SQL", icon: <BsFiletypeSql color="#4479A1" size={20} /> },
       ],
       icon: <RiCodeSSlashLine size={30} color="#1a1a1a" />,
     },
@@ -53,11 +53,11 @@ const Skills = () => {
       id: 4,
       title: "Cybersecurity",
       description: "Network Security, Threat Analysis, Threat Hunting.",
-       items: [
-       { text: "Network Security", icon: <BiShieldQuarter color="#2ECC71" size={20} /> },
-{ text: "Threat Analysis", icon: <GiMagnifyingGlass color="#E67E22" size={20} /> },
-{ text: "Threat Hunting", icon: <FaCrosshairs color="#E74C3C" size={20} /> },
-],
+      items: [
+        { text: "Network Security", icon: <BiShieldQuarter color="#2ECC71" size={20} /> },
+        { text: "Threat Analysis", icon: <GiMagnifyingGlass color="#E67E22" size={20} /> },
+        { text: "Threat Hunting", icon: <FaCrosshairs color="#E74C3C" size={20} /> },
+      ],
       icon: <FaLock size={30} color="#1a1a1a" />,
     },
     {
@@ -65,19 +65,26 @@ const Skills = () => {
       title: "Tools",
       description: "Git, Windows, Linux, Virtual Machines",
       items: [
-       { text: "Git", icon: <FaGitAlt color="#F05032" size={20} /> },        
-{ text: "Windows", icon: <FaWindows color="#0078D6" size={20} /> },  
-{ text: "Linux", icon: <FcLinux size={20} /> },                      
-{ text: "Virtual Machines", icon: <FaDesktop color="#6C63FF" size={20} /> }, 
-],
+        { text: "Git", icon: <FaGitAlt color="#F05032" size={20} /> },
+        { text: "Windows", icon: <FaWindows color="#0078D6" size={20} /> },
+        { text: "Linux", icon: <FcLinux size={20} /> },
+        { text: "Virtual Machines", icon: <FaDesktop color="#6C63FF" size={20} /> },
+      ],
       icon: <FaTools size={30} color="#1a1a1a" />,
     },
     {
-      id: 6,
-      title: "Other",
-      description: "Problem solving, collaboration.",
-      icon: <FaUsers size={30} color="#1a1a1a" />,
-    },
+  id: 6,
+  title: "Other",
+  description: "Soft skills that support my work and growth.",
+  items: [
+    { text: "Problem Solving", icon: <FaLightbulb color="#FFD700" size={20} /> },
+    { text: "Collaboration", icon: <FaUsersCog color="#1a1a1a" size={20} /> },
+    { text: "Communication", icon: <FaComments color="#25D366" size={20} /> },
+    { text: "Adaptability", icon: <FaSyncAlt color="#6C63FF" size={20} /> },
+  ],
+  icon: <FaUsers size={30} color="#1a1a1a" />,
+}
+
   ];
 
   return (

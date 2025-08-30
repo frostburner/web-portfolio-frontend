@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 /* Optional custom styles for fine-tuning: */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1a1a1a;
   color: #fff;
@@ -141,13 +145,17 @@ h1 {
   font-weight: 800;
 }
 
+/* About Section */
 .about {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   max-width: auto;
   font-size: 1rem;
   color: #ccc;
-  height: 90vh;
+  height: 100vh;
+  align-content: center;
 }
 
 .title {
@@ -206,13 +214,17 @@ h1 {
   object-fit: contain;
 }
 
+
+/* Skills Section */
 .skills {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   max-width: auto;
   font-size: 1rem;
   color: #ccc;
-  height: 90vh;
+  height: 100vh;
 }
 
 .skills li {
@@ -289,6 +301,9 @@ h1 {
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
+  width: 150px;
+  align-items: center;
+  margin: 20px auto;
 }
 
 .resume-btn:hover {
@@ -296,13 +311,12 @@ h1 {
   color: #300;
 }
 
-/* ✅ New Styles for Skills Popup */
+/* New Styles for Skills Popup */
 .skills {
   position: relative;
 }
 
 .check {
-  /* position: relative; */
   z-index: 2;
   text-align: center;
   margin-bottom: 30px;
@@ -327,7 +341,7 @@ h1 {
 .popup-card {
   max-width: 520px;
   width: 90%;
-  background: #95feff; /* keep original solid color */
+  background: #95feff;
   border-radius: 12px;
   padding: 2rem;
   animation: scaleIn 0.25s ease;
@@ -355,6 +369,6 @@ h1 {
 }
 
 .skill-text {
-  color: #1a1a1a; /* blue */
-  font-weight: 500; /* optional */
+  color: #1a1a1a;
+  font-weight: 500; 
 }

@@ -14,14 +14,19 @@ const App = () => {
     <Navbar />
     
     <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/skills" element={<Skills />} />
-      {/* Add more routes here as needed */}
+
+      <Route path="/" element={
+        <>
+        <section id="home"><Homepage /></section>
+        <section id='about'><About /></section>
+        <section id='skills'><Skills /> </section>
+        <section id='projects'></section>
+        <section id='contact'></section>
+        </>
+      }
+      />
     </Routes>
-    
-    <About /> 
-    <Skills />
+  
     
     {/*insert */}
   </>
